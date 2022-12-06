@@ -1,0 +1,188 @@
+/*GOOGLE FONTS FONT-FAMILY: POPPINS E ROBOTO*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background);
+    font-family: Poppins, "sans-serif";
+    color: var(--text-base);
+    margin-left: 33px;
+}
+
+/*HEADER*/
+header {
+    width: 334px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 27px;
+}
+
+header div {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+
+header div span {
+    display: flex;
+    gap: 10px;
+}
+
+header div p {
+    margin-top: 5px;
+    font-family: Roboto, "sans-serif";
+    font-size: 16px;
+    color: var(--text-base);
+}
+
+/*MAIN*/
+main form {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+main form input {
+    height: 44px;
+    background-color: var(--background);
+}
+
+main form label {
+    margin-bottom: 5px;
+}
+
+#email {
+    border: 1px solid var(--text-title);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#email::placeholder {
+    width: fit-content;
+    background-image: url(/assets/img/mail.svg);
+    filter: grayscale(1);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    padding-left: 40px;
+    font-family: Roboto, "sans-serif";
+    font-size: 14px;
+    color: var(--text-base);
+}
+
+#email:focus-within{
+    border: 3px solid var(--primary-color);
+}
+
+
+#password {
+    border: 1px solid var(--text-title);
+    border-radius: 4px;
+    background-image: url(/assets/img/eye.svg);
+    background-repeat: no-repeat;
+    background-position: 300px;
+}
+
+#password::placeholder {
+    width: fit-content;
+    background-image: url(/assets/img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-size: 18px;
+    padding-left: 40px;
+    font-family: Roboto, "sans-serif";
+    font-size: 14px;
+    color: var(--text-base);
+}
+
+#password:focus-within{
+    border: 3px solid var(--primary-color);
+}
+
+form div {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-family: Roboto, "sans-serif";
+    font-size: 16px;
+}
+
+.custom-checkbox input{
+    display: none;
+}
+
+.custom-checkbox label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: var(--background);
+    display: inline-block;
+}
+
+.custom-checkbox input:checked + label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--primary-color);
+    border: none;
+}
+form div label {
+    display: flex;
+    gap: 5px;
+    font-weight: 500px;
+    margin-right: 75px;
+}
+
+form div span:nth-child(3) {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+form div span:nth-child(3):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button{
+    height: 51px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    font-family: Poppins, "sans-serif";
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+form p:nth-last-child(1){
+    margin: auto;
+    font-size: 14px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+form p:nth-last-child(1):hover{
+    text-decoration: underline;
+}
