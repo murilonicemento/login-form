@@ -2,7 +2,7 @@
 Projeto criado através da plataforma Rocketseat - Trilha Discover
 
 ## Deploy da aplicação
-
+https://login-form-rose.vercel.app/
 
 ## Tecnologias utilizadas
 + HTML5
@@ -16,6 +16,9 @@ Projeto criado através da plataforma Rocketseat - Trilha Discover
 + Esqueci minha senha
 + Registre-se
 
-## Home
+## Home Mobile
 
-<img src=".github/project.png">
+<img src=".github/project-mobile.png">
+
+## Home Desktop
+<img src=".github/project-desktop.png">
