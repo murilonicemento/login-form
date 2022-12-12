@@ -7,7 +7,7 @@ https://login-form-rose.vercel.app/
 ## Tecnologias utilizadas
 + HTML5
 + CSS3
-
++ JavaScript
 
 ## Estrutura do site
 + E-mail
